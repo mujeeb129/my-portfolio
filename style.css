@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster+Two:wght@700&family=Poppins:wght@500;600&family=Ubuntu:wght@500&display=swap');
+
+*{
+	margin :0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+/*navigation bar style*/
+.navigation-bar{
+	/*background : #1a1c20;*/
+	position: fixed;
+	width : 100%;
+	font-family: 'Poppins' , san-serif;
+	padding:20px 0;
+	transition: 
+}
+
+.base{
+	max-width: 1300px;
+	padding: 0 70px;
+	margin : auto;
+}
+
+.navigation-bar .base{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navigation-bar .items-nav li a{
+	color : white;
+	transition: color 0.3s ease;
+	margin-left: 25px;
+	font-size:18px;
+	font-weight: 500;
+}
+
+.navigation-bar .items-nav li a:hover{
+	color: #1a1c20
+}
+
+.navigation-bar .logo-nav a{
+	color:white;
+	font-weight: 600;
+	font-size:35px;
+	font-family:'Ubuntu' , san-serif;
+}
+.navigation-bar li{
+	list-style: none;
+	display: inline-block;
+}
+
+/*Home section*/
+.home{
+	min-height: 500px;
+	height: 100vh;
+	background: url('images/home-background.jpg') no-repeat center;
+	background-attachment: relative;
+	display: flex;
+	color : white;
+	background-size: 100% 100%;
+	font-family:'Ubuntu' , san-serif;
+}
+
+.home .base{
+	margin:auto 0 auto 40px;
+}
+
+
+
+.home .content-home .text1{
+	font-size: 27px;
+}
+
+.home .content-home .text2{
+	font-size: 75px;
+	font-weight: 600;
+	margin-left: -4px;
+}
+
+.home .content-home .text3{
+	font-size: 40px;
+	margin: 5px 0;
+}
+.home .content-home .text3 span{
+	color:#3f4441;
+}
