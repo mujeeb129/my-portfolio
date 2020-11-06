@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster+Two:wght@700&family=Poppins:wght@500;600&family=Ubuntu:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 *{
 	margin :0;
 	padding:0;
@@ -14,6 +14,7 @@
 	font-family: 'Ubuntu' , san-serif;
 	padding:14px 0;
 	transition: all 0.3s ease;
+	z-index: 999;
 }
 
 .navigation-bar.sticky{
@@ -103,6 +104,83 @@
 .home .content-home .text3 span{
 	color:#222831;
 }
+
+/*About me styling*/
+section{
+	padding:50px;
+}
+.about{
+	font-family: 'Nunito' , san-serif;
+	font-size: 20px;
+}
+.about .heading{
+	position: relative;
+	font-family: 'Ubuntu' , san-serif;
+	font-weight: 400;
+	font-size:40px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom:60px;
+}
+
+.about .heading::before{
+	content:"";
+	background: black;
+	width:190px;
+	height: 3px;
+	position: absolute;
+	left:50%;
+	bottom:0px;
+	transform: translateX(-50%);
+}
+.about .heading::after{
+	content:"who am i";
+	background: white;
+	padding:5px;
+	position: absolute;
+	left:50%;
+	bottom:-10px;
+	transform: translateX(-50%);
+	font-size:20px;
+	color:#222831;
+}
+
+.about .content-about{
+	display:flex;
+	flex-wrap:wrap;
+	text-align: center;
+	justify-content: space-between;
+
+}
+
+.about .content-about .left img{
+	height: 500px;
+	width:400px;
+	object-fit: cover;
+}
+.about .content-about .left{
+	width:45%;
+}
+.about .content-about .right{
+	width:55%;
+}
+.about .content-about .right .text{
+	font-size:25px;
+	font-weight: 600px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*Making the page responsive*/
 @media (max-width:1100px){
