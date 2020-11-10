@@ -149,7 +149,7 @@ section .heading::after{
 	content:"who am i";
 }
 
-.about .content-about , .service .content-sevice{
+.about .content-about , .service .content-service{
 	display:flex;
 	flex-wrap:wrap;
 	align-items: center;
@@ -194,6 +194,26 @@ section .heading::after{
 .service .content-service .card{
 	width: calc(33% - 20px);
 	text-align: center;
+	background: #222;
+	padding: 20px 25px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.service .content-service .card .box{
+	transition: all 0.3s ease;
+}
+
+.service .content-service .card:hover .box{
+	transform: scale(1.05);
+}
+
+.service .content-service .card:hover i{
+	background: #EC9513;
+}
+
+.service .content-service .card .box{
+	transition: all 0.3s ease;
 }
 
 .service .heading{
@@ -208,6 +228,20 @@ section .heading::after{
 	content: "what I do";
 	background: #111;
 }
+
+.service .content-service i{
+	font-size: 50px;
+	color: #EC9513 
+}
+
+
+
+.service .content-service .card .text{
+	font-weight: 500px;
+	font-size: 22px;
+	margin: 10px 6px;
+}
+
 
 
 
