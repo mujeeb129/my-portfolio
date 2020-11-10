@@ -82,9 +82,7 @@
 
 .home .max-width{
 	margin:auto 0 auto 40px;
-}
-
-.home .content-home{
+	display:flex;
 }
 
 .home .content-home .text1{
@@ -102,18 +100,21 @@
 	margin: 5px 0;
 }
 .home .content-home .text3 span{
-	color:#222831;
+	/*color:#EC9513;*/
+	color:#956D30;
 }
 
 /*About me styling*/
 section{
 	padding:50px;
 }
-.about{
+section{
 	font-family: 'Nunito' , san-serif;
 	font-size: 20px;
 }
-.about .heading{
+
+
+section .heading{
 	position: relative;
 	font-family: 'Ubuntu' , san-serif;
 	font-weight: 400;
@@ -123,7 +124,7 @@ section{
 	margin-bottom:60px;
 }
 
-.about .heading::before{
+section .heading::before{
 	content:"";
 	background: black;
 	width:190px;
@@ -133,8 +134,7 @@ section{
 	bottom:0px;
 	transform: translateX(-50%);
 }
-.about .heading::after{
-	content:"who am i";
+section .heading::after{
 	background: white;
 	padding:5px;
 	position: absolute;
@@ -142,13 +142,17 @@ section{
 	bottom:-10px;
 	transform: translateX(-50%);
 	font-size:20px;
-	color:#222831;
+	color:#EC9513;
 }
 
-.about .content-about{
+.about .heading::after{
+	content:"who am i";
+}
+
+.about .content-about , .service .content-sevice{
 	display:flex;
 	flex-wrap:wrap;
-	text-align: center;
+	align-items: center;
 	justify-content: space-between;
 
 }
@@ -166,14 +170,44 @@ section{
 }
 .about .content-about .right .text{
 	font-size:25px;
-	font-weight: 600px;
+	font-weight: 600;
 	margin-bottom: 10px;
 	font-weight: 600;
+	text-align: left;
 }
 
+.about .content-about .right .text span{
+	color:#EC9513;
+}
 
+.about .content-about .right p{
+	text-align: justify;
+}
 
+/*service section*/
 
+.service{
+	background: #111;
+	color: white;
+}
+
+.service .content-service .card{
+	width: calc(33% - 20px);
+	text-align: center;
+}
+
+.service .heading{
+	color: white;
+}
+
+.service .heading::before{
+	background: white;
+}
+
+.service .heading::after{
+	content: "what I do";
+	background: #111;
+}
 
 
 
@@ -183,12 +217,19 @@ section{
 
 
 /*Making the page responsive*/
-@media (max-width:1100px){
+@media (max-width:1300px){
 	.home .max-width{
 		margin-left:0px;
 	}
 }
 
+@media (max-width:1150px){
+	.about .content-about .left img{
+		height: 400px;
+		width:330px;
+		object-fit: cover;
+}
+  
 @media (max-width:991px){
 	.max-width{
 		padding:0 50px;
@@ -196,10 +237,6 @@ section{
 
 }
 @media (max-width:947px){
-	.max-width {
-		padding: 0 50px;
-
-	}
 
 	.menu-btn{
 		display:block;
@@ -246,7 +283,24 @@ section{
 	
 	.home .content-home .text3{
 		font-size: 35px;
-		margin: 5px 0;
+	}
+
+	.max-width{
+		max-width: 800px;
+	}
+
+	.about .content-about .column{
+		width:100%;
+	}
+
+	.about .content-about .left{
+		display:flex;
+		justify-content: center;
+		margin: 0 auto 60px;
+	}
+
+	.about .content-about .right{
+		flex:100%;
 	}
 }
 
@@ -266,15 +320,14 @@ section{
 	
 	.home .content-home .text3{
 		font-size: 25px;
-		margin: 5px 0;
 	}
 }
-@media (max-width:520px){
+
+@media (max-width:500px){
 	.max-width {
 		padding: 0 19px;
 
 	}
-
 
 	.home .content-home .text1{
 		font-size: 18px;
@@ -286,6 +339,5 @@ section{
 	
 	.home .content-home .text3{
 		font-size: 22px;
-		margin: 5px 0;
 	}
 }
