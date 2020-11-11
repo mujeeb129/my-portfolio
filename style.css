@@ -106,7 +106,7 @@
 
 /*About me styling*/
 section{
-	padding:50px;
+	padding:45px;
 }
 section{
 	font-family: 'Nunito' , san-serif;
@@ -149,7 +149,9 @@ section .heading::after{
 	content:"who am i";
 }
 
-.about .content-about , .service .content-service{
+.about .content-about , 
+.service .content-service ,
+.skill .content-skill{
 	display:flex;
 	flex-wrap:wrap;
 	align-items: center;
@@ -243,8 +245,80 @@ section .heading::after{
 	font-weight: 500px;
 	font-size: 22px;
 	margin: 10px 6px;
+	font-weight: 600;
 }
 
+
+/*skills*/
+.skill .content-skill .left .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.skill .heading::after{
+	content: "what I know"
+}
+
+.skill .content-skill .column{
+	width: calc(50% - 30px); 
+}
+
+.skill .content-skill .right .bars{
+	margin-bottom: 15px;
+	font-family: 'Poppins' , san-serif;
+}
+
+.skill .content-skill .right .information{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.skill .content-skill .right span{
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.skill .content-skill .right .line{
+	background: lightgrey;
+	height: 4px;
+	position: relative;
+	width: 100%;
+}
+
+.skill .content-skill .right .line::before{
+	content: "";
+	background: #EC9513;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.skill .content-skill .right .python::before{
+	width: 80%;
+}
+
+.skill .content-skill .right .java::before{
+	width: 72%;
+}
+
+.skill .content-skill .right .javascript::before{
+	width: 50%;
+}
+
+.skill .content-skill .right .html::before{
+	width: 67%;
+}
+
+.skill .content-skill .right .css::before{
+	width: 57%;
+}
+
+.skill .content-skill .right .mysql::before{
+	width: 40%;
+}
 
 
 
