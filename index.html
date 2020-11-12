@@ -175,7 +175,7 @@
 				</div>
 				<div class="column right">
 					<div class="text">Mail me</div>
-					<form action="mail.php">
+					<form action="mail.php" method="POST">
 						<div class="fields">
 							<div class="field name">
 								<input type="text" placeholder="Name" required="" name="name">
@@ -188,10 +188,10 @@
 							<input type="text" placeholder="Subject" required="" name="subject">
 						</div>
 						<div class="field textarea">
-							<textarea cols="30" rows="10" placeholder="Describe" name="describtion"></textarea>
+							<textarea cols="30" rows="10" placeholder="Describe" name="message"></textarea>
 						</div>
 						<div class="button">
-							<button type="submit" value="Send">Send</button>
+							<input type="submit" name="submit" value="Submit" />
 						</div>
 					</form>
 				</div>
