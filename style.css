@@ -168,9 +168,11 @@ section .heading::after{
 }
 
 .about .content-about .left img{
-	height: 500px;
-	width:400px;
+	height: 400px;
+	width:300px;
 	object-fit: cover;
+	border-radius: 3px;
+	margin-left: 50px;
 }
 .about .content-about .left{
 	width:45%;
