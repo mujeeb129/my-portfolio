@@ -168,17 +168,16 @@ section .heading::after{
 }
 
 .about .content-about .left img{
-	height: 400px;
-	width:300px;
+	height: 450px;
+	width:350px;
 	object-fit: cover;
 	border-radius: 3px;
-	margin-left: 50px;
 }
 .about .content-about .left{
-	width:45%;
+	width:40%;
 }
 .about .content-about .right{
-	width:55%;
+	width:60%;
 }
 .about .content-about .right .text{
 	font-size:25px;
