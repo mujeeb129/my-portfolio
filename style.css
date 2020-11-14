@@ -468,21 +468,47 @@ section .heading::after{
 }
 
 /*footer*/
-footer{
+.footer{
 	font-family: 'Ubuntu' ,san-serif;
 	background: #111;
 	padding: 20px 23px;
 	color: #fff;
 
 }
-footer span a{
+
+.footer span a{
 	color: #EC9513;
 	text-decoration: none
 }
 
-footer span a:hover{
+.footer span a:hover{
 	text-decoration: underline;
 }
+
+.footer .icond a{
+	color: inherit;
+	justify-content: center;
+	font-size: 23px;
+	margin: 0 5px;
+
+}
+
+.footer .social-media {
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -625,5 +651,10 @@ footer span a:hover{
 	
 	.home .content-home .text3{
 		font-size: 22px;
+	}
+
+	section .heading::after{
+		font-size: 15px;
+		margin-bottom: -5.5px
 	}
 }
