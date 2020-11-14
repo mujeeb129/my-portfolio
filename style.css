@@ -551,6 +551,10 @@ section .heading::after{
 		transition: all 0.3s ease; 
 	}
 
+	.menu-btn{
+		color: #fff
+	}
+
 	.menu-btn i{
 		transition: auto 0.3s ease;
 	}
@@ -566,11 +570,14 @@ section .heading::after{
 	.navigation-bar .items-nav li{
 		display: block;
 
+
 	}
 	.navigation-bar .items-nav li a{
 		display: inline-block;
 		margin: 20px 0;
 		font-size:25px;
+		font-color: white
+
 
 	}
 	.home .content-home .text2{
@@ -646,10 +653,6 @@ section .heading::after{
 
 	p{
 		font-size: 16px;
-	}
-
-	.text{
-		font-size: 18px
 	}
 
 	.max-width {
