@@ -636,6 +636,14 @@ section .heading::after{
 }
 
 @media (max-width:500px){
+	.navigation-bar .logo-nav{
+		font-size: 30px
+	}
+
+	.navigation-bar .items-nav li a{
+		font-size:20px;
+
+
 	p{
 		font-size: 16px;
 	}
